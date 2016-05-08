@@ -1,0 +1,10 @@
+<h1>The books to the final project</h1>
+<%= form_for(@book) do |b| %>  
+<%= b.label :title %>  
+<%= b.text_field :title %><br/>  
+<%= b.label :author %>  
+<%= b.text_field :author %><br/>  
+<%= b.label :comment %>  
+<%= b.text_field :comment %><br/>  
+<%= b.submit %>
+<% end %>

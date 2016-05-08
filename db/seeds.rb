@@ -1,15 +1,5 @@
-User.create!(name:  "Example User",
-             email: "example@railstutorial.org",
-             password:              "foobar",
-             password_confirmation: "foobar",
-             admin: true)
+Book.create(title: "Harry Potter", author: "J.K. Rowling", comment: "Mysterious book and the only one I can think of")
+Book.create(title: "Ruby on Rails", author: "Michael Hartl", comment: "I learned something new")
+Book.create(title: "Hamlet", author: "William Shakespeare", comment: "Read this book in my ENGL 2110")
 
-99.times do |n|
-  name  = Faker::Name.name
-  email = "example-#{n+1}@railstutorial.org"
-  password = "password"
-  User.create!(name:  name,
-               email: email,
-               password:              password,
-               password_confirmation: password)
-end
+
